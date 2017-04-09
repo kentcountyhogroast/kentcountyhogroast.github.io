@@ -1,0 +1,80 @@
+.top-bar {
+  background-color: #4B651E;
+  top:0;
+  width: 100%;
+  height: 45px;
+}
+
+.top-bar * {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.link-group, .fi-list {
+  float: right;
+}
+
+.fi-list {
+  font-size: 18px;
+  margin-right: 30px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+.link-group a {
+  font-size: 12px;
+  color: white;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+.active {
+  font-size: 22px !important;
+}
+
+.link-group a:hover, .fi-list:hover  {
+ font-size: 22px;
+}
+
+.top-bar .span {
+  float: left;
+  padding-left: 30px;
+  color: #ffffff;
+}
+
+.menu-up {
+  display: none;
+}
+
+.drop-down {
+  z-index: 1000;
+  position: fixed;
+  top: 45px;
+  width: 100%;
+  background-color: rgba(75,101,30,0.8);
+  text-align: center;
+  display: none;
+}
+
+.drop-down a {
+  display: block;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+.drop-down a.active {
+  transform: scale(1.1);   
+}
+
+
+.drop-down a:hover {
+  transform: scale(1.1); 
+}

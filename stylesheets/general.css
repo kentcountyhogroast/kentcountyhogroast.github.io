@@ -1,0 +1,48 @@
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+body * {
+  font-family: Futura Next, "Trebuchet MS", Arial, sans-serif;
+  color: #4B651E;
+}
+
+h1 {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+a {
+  color: #4B651E;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #BFDF8A;
+}
+
+.title {
+  margin-top: 5%;
+  text-align:center;
+}
+
+.title h1 {
+  color: #4B651E;
+}
+
+/*Small screens*/
+@media only screen and (max-width: 40em)  { 
+  .content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .content p {
+    text-align: justify;
+  }
+
+}

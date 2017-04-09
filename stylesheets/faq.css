@@ -1,0 +1,25 @@
+.faq {
+  min-height: 90%;
+}
+
+.questions {
+  margin: auto;
+  width: 90%;
+}
+
+h4 {
+  text-decoration: underline;
+  /*color: #BFDF8A;*/
+}
+
+/*Small Only*/
+@media only screen and (max-width: 40em)  { 
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .content {
+  	padding-right: 20px;
+  	padding-left: 20px;
+  }
+}
