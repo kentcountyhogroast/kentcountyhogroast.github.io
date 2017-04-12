@@ -10,6 +10,8 @@
 
 .accordion-navigation * {
 	color: #4B651E !important;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .content p {
