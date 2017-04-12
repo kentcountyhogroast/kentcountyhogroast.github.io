@@ -1,21 +1,23 @@
 html,body
 {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
-  overflow:auto;
-    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 body * {
-  font-family: Futura Next, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura Next, "Trebuchet MS", Arial, sans-serif !important;
   color: #4B651E;
 }
 
+p, .text {
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;}
+
 h1 {
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
 }
 
 a {
@@ -38,13 +40,11 @@ a:hover {
 
 /*Small screens*/
 @media only screen and (max-width: 40em)  { 
-  .content {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 
   .content p {
     text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
   }
 
 }

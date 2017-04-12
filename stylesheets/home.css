@@ -7,11 +7,10 @@
   border: 3px solid #4B651E;
 }
 
-.landing-image {
-  float: right;
-  max-width: 50%;
-  margin-left: 20px;
+.content-buttons {
+  bottom: 0;
 }
+
 .content-buttons a {
   border: 3px solid #4B651E;
   background-color: white;
@@ -24,9 +23,9 @@
   -webkit-transition:.5s;
   transition:.5s;
   margin-bottom: 10px;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  float:left;
+  clear:left;
+  width: 100%;
 }
 
 .content-buttons a:hover {
@@ -40,52 +39,40 @@
   align-items: center;
 }
 
-.image img {
-  width: 90%;
-  height: 90%;
-  border-radius: 1000px;
-  border: 7px solid #FFFFFF !important;
-}
-
 .image.show-for-small-only {
-  margin: 10px;
+
 }
 
 .prices img{
   border: 7px solid #4B651E !important;
 }
 
-.section {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.section img {
+.content img {
   max-height: 200px;
   max-width: 200px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.section.hide-for-large-up .content{
-  max-width: 800px;
+.content {
+  margin-bottom: 50px;
 }
 
-.section h3 {
+.divider {
+  border-top: 1px #4B651E solid;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content .heading {
   text-decoration: underline;
+  text-align: center;
 }
 
-.meat, .service {
-  background-color: #4B651E;
-}
-
-.meat *, .service * {
-  color: white;
-}
-
-.prices * {
+.prices *, .meat *, .service * {
   color: #4B651E;
 }
 
@@ -93,35 +80,63 @@
   float: left;
   margin: 10px;
   border-radius: 1000px;
-  border: 7px solid #FFFFFF !important;
+  border: 7px solid #FFFFFF;
+}
+
+.prices img, .meat img, .service img {
+  border-radius: 1000px;
+  border: 7px solid #4B651E;
 }
 
 .prices img.show-for-medium-only {
   float: right;
-  border: 7px solid #4B651E !important;
 }
 
 /*Small screens*/
 @media only screen and (max-width: 40em)  { 
-  .content-buttons{
-    width: 100%;
+  .landing {
+    padding: 10px;
+  }
+
+  .section h3 {
+    text-decoration: underline;
   }
 
   .landing {
-    min-height: 100%;
+    padding-bottom: 50px;
+  }
+
+  .meat, .service {
+    background-color: #4B651E;
+  }
+
+  .meat * , .service * {
+    color: white;
+  }
+
+  .meat img, .service img {
+    border: 7px solid #ffffff;
+  }
+
+  .prices, .service, .meat {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  .content-buttons a {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    margin-bottom: 10px;
+@media screen and (min-width: 40em) {
+  .section, .landing {
+    padding: 10px;
   }
 
-  .section.hide-for-large-up .content{
-    max-width: 60%;
-    min-width: 500px;
+  .content-buttons{
+    margin-top: 20px;
   }
 }

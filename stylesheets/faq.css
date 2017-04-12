@@ -2,9 +2,22 @@
   min-height: 90%;
 }
 
-.questions {
-  margin: auto;
-  width: 90%;
+.faq * {
+	text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.accordion-navigation * {
+	color: #4B651E !important;
+}
+
+.content p {
+	margin: 10px;
+}
+
+.footer {
+	margin-top: 20px;
 }
 
 h4 {
@@ -23,3 +36,5 @@ h4 {
   	padding-left: 20px;
   }
 }
+
+

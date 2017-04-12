@@ -23,3 +23,8 @@ $(document).click(function(event) {
         }
     }        
 })
+
+$( "body" ).scroll(function() {
+  $('.drop-down').hide();
+  navShowing = false;   
+});
