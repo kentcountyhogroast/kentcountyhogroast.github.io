@@ -1,7 +1,3 @@
-.main {
-  margin-right: 0px !important;
-}
-
 body * {
   font-family: Futura Next, "Trebuchet MS", Arial, sans-serif !important;
   color: #4B651E;
@@ -10,7 +6,8 @@ body * {
 p, .text {
   text-align: justify;
   -moz-text-align-last: center;
-  text-align-last: center;}
+  text-align-last: center;
+}
 
 h1 {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;

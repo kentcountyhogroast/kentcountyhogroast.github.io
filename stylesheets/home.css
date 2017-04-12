@@ -139,4 +139,11 @@
   .content-buttons{
     margin-top: 20px;
   }
+
+  
+
+  .main {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
 }
