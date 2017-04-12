@@ -39,10 +39,6 @@
   align-items: center;
 }
 
-.image.show-for-small-only {
-
-}
-
 .prices img{
   border: 7px solid #4B651E !important;
 }
@@ -129,6 +125,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .main {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .section .text {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -136,14 +142,7 @@
     padding: 10px;
   }
 
-  .content-buttons{
+  .content-buttons {
     margin-top: 20px;
-  }
-
-  
-
-  .main {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
   }
 }

@@ -52,6 +52,8 @@ a.button:hover {
   }
 
   .main {
+    padding-left: 15px;
+    padding-right: 15px;
     margin-right: 0px !important;
     margin-left: 0px !important;
   }
