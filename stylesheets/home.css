@@ -135,6 +135,10 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .landing-image {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 40em) {
