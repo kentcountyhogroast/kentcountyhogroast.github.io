@@ -1,4 +1,3 @@
-
 $( "#submit-button" ).click(function(){
   $('html, body').animate({scrollTop: '0px'}, 300);
   sendMail();
@@ -17,6 +16,14 @@ $( ".clear" ).click(function(){
   $('#date').val('');
   $('#package').val('');
 });
+
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+
+    $('#date').val(new Date().toDateInputValue());
 
 function loadServer() {
   var url = "https://arcane-anchorage-33274.herokuapp.com"
