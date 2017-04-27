@@ -1,0 +1,202 @@
+/* Landing CSS */
+.landing {
+  padding-bottom: 30px;
+}
+
+.landing .text {
+  width: 100%;
+  margin: 0px;
+}
+
+.landing .image {
+  padding-left: 0px;
+}
+
+.landing .image img {
+  border: 3px solid #003300;
+}
+
+.content-buttons {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.content-buttons a {
+  border: 3px solid #003300;
+  background-color: white;
+  color: #003300;
+  text-align: center;
+  padding: 10px; 
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  margin-bottom: 10px;
+  float:left;
+  clear:left;
+  width: 100%;
+  text-decoration: none;
+}
+
+.content-buttons a:hover {
+  background-color: #BFDF8A;
+  color: black;
+}
+
+/* Divider CSS */
+.divider {
+  border-top: 3px #003300 solid;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Extra info CSS */
+.prices img, .meat img, .service img {
+  border-radius: 1000px;
+  border: 7px solid #003300;
+}
+
+.prices *, .meat *, .service * {
+  color: #003300;
+}
+
+.meat {
+  padding-left: 0px;
+}
+
+.service {
+  padding-right: 0px;
+}
+
+.section .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices img{
+  border: 7px solid #003300;
+}
+
+.extra-info img {
+  max-height: 200px;
+  max-width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*Small screens*/
+@media only screen and (max-width: 40em)  {
+
+  .extra-info {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .landing {
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+
+  .service, .meat {
+    background-color: #003300;
+  }
+
+  .service * , .meat * {
+    color: white;
+  }
+
+  .service img, .meat img {
+    border: 7px solid #ffffff;
+  }
+
+  .prices, .service, .meat {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section {
+    margin: 0px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+
+  .section img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    max-width: 40vw;
+    max-height: 40vw;
+  }
+
+  .main {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  
+  .landing .image {
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  
+  .landing-image img {
+    margin-bottom: 20px;
+  }
+  
+  .landing .text {
+    width: auto;
+  }
+
+  .introduction {
+    margin-left: 0px;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+}
+
+/* Medium Screens */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .section {
+    background-color: #FFFFFF;
+  }
+
+  .text, .title{
+    color: #003300;
+  }
+
+  .sub-title {
+    padding: 0px;
+    color: #003300;
+  }
+
+  .sub-title * {
+    color: #003300;
+  }
+
+  .landing {
+    padding-bottom: 20px;
+  }
+
+  .landing .image {
+    padding-right: 20px;
+  }
+
+  .section img {
+    border: 7px solid #003300; 
+    border-radius: 1000px;
+    max-width: 20vw;
+    max-height: 20vw;
+  }
+
+}

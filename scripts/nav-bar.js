@@ -24,7 +24,7 @@ $(document).click(function(event) {
     }        
 })
 
-$( "body" ).scroll(function() {
+$(window).on('mousewheel', function(){
   $('.drop-down').hide();
-  navShowing = false;   
+  navShowing = false;  
 });

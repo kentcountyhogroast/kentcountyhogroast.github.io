@@ -5,25 +5,27 @@
     
     <title>Kent County Hog Roast</title>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+    <link rel="stylesheet" href="../foundation/css/foundation.min.css">
     <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../stylesheets/general.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/nav-bar.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/faq.css"> 
     <link rel="stylesheet" type="text/css" href="../stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/nav-bar.css">
+    <link rel="icon" 
+      type="image/jpg" 
+      href="../assets/logo.jpg">
   </head>
  
   <body>
     <nav class="top-bar" data-topbar role="navigation">
-      <a href="../index.html" class="span">Kent County Hog Roast</a>
-      <div class="link-group show-for-medium-up">
-        <a href="../index.html" type="button">Home</a>
-        <a href="enquiries.html" type="button">Enquiries</a>
-        <a href="prices.html" type="button">Price List</a>
-        <a class="active" type="button">FAQs</a>
+      <a href="../index.html" class="logo">Kent County Hog Roast</a>
+      <div class="link-group show-for-large">
+        <a href="../index.html">Home</a>
+        <a href="enquiries.html">Enquiries</a>
+        <a href="packages.html">Hog Roast Packages</a>
+        <a href="" class="active">FAQs</a>
       </div>
-      <div class="menu show-for-small-only">
+      <div class="menu hide-for-large">
         <a href="#"><i class="fi-list large"></i></a>
       </div>
     </nav>
@@ -31,105 +33,116 @@
     <div class="drop-down">
       <a href="../index.html">Home</a>
       <a href="enquiries.html">Enquiries</a>
-      <a href="prices.html">Price List</a>
+      <a href="packages.html">Hog Roast Packages</a>
       <a class="active" href="">FAQs</a>
     </div>
     
-    <div class="faq row">
-      <div class="title small-12 columns">
-        <h1>Frequently Asked Questions</h1>
+    <div class="main row">
+      <div class="title">
+        <h1 class="hide-for-landscape">FAQs</h1>
+        <h2 class="show-for-landscape">FAQs</h2>
       </div>
-      <div class="content row main">
-        <div class="row main">
-         <div class="large-12 columns text-center">
-           
-         </div>
+      <div class="questions">
+        <div class="faq-question">
+          <div class="question">
+            1. How many people will a hog roast cater for?
+            <div class="answer" id="answer1">
+              <p>A full hog will cater for up to 200 guests. A half hog will feed up to 100 guests.</p>
+            </div>
+          </div>
         </div>
-        <dl class="accordion" data-accordion>
-         <dd class="accordion-navigation">
-            <a href="#panel1">1. How many people will a whole hog feed?</a>
-            <div id="panel1" class="content">
-              <p>A whole hog will feed 200 people. We also provide half-hogs.</p>   
-            </div>
-         </dd>
-          
-         <dd class="accordion-navigation">
-           <a href="#panel2">2. Where is your meat from?</a>
-            <div id="panel2" class="content">
-              <p>We get our meat from P W Copus Butchers.</p>   
-            </div>
-         </dd>
 
-         <dd class="accordion-navigation">
-            <a href="#panel3">3. How long before the event start do you need to arrive?</a>
-            <div id="panel3" class="content">
-              <p>About 5 hours.</p>   
+        <div class="faq-question">
+          <div class="question">
+            2. How long before the event will you need to set up?
+            <div class="answer" id="answer2">
+              <p>Our team will be with you roughly seven hours before your event. This is so we have time to set up and can get the hog cooking.</p>
             </div>
-         </dd>
-          
-         <dd class="accordion-navigation">
-           <a href="#panel4">4. Can I get a discount?</a>
-            <div id="panel4" class="content">
-              <p>No. Piss Off.</p>   
-            </div>
-         </dd>
+          </div>
+        </div>
 
-         <dd class="accordion-navigation">
-           <a href="#panel5">5. How much wood can a Woodchuck chuck, if a Woodchuck could chuck wood?</a>
-            <div id="panel5" class="content">
-              <p>2.3.</p>   
+        <div class="faq-question">
+          <div class="question">
+            3. How long does a full hog take to cook?
+            <div class="answer" id="answer3">
+              <p>5-6 hours.</p>
             </div>
-         </dd>
+          </div>
+        </div>
 
-         <dd class="accordion-navigation">
-           <a href="#panel6">6. How far in advance should I book?</a>
-            <div id="panel6" class="content">
-              <p>As soon as possible. We would hate to turn you away!</p>   
-            </div>
-         </dd>
+        <div class="faq-question">
+          <div class="question">
+            4. How much will it cost?
+            <div class="answer" id="answer4">
+              <p>Please visit our <a href="packages.html">Hog Roast Packages</a> page to give you an idea on costs. If you just require the equipment, machine hire, gas, set up and delivery and collection then the cost is only £150.</p>
 
-         <dd class="accordion-navigation">
-            <a href="#panel7">7. How many people will a whole hog feed?</a>
-            <div id="panel7" class="content">
-              <p>A whole hog will feed 200 people. We also provide half-hogs.</p>   
+              <p>If our packages do not meet your requirements then please contact us and a bespoke package can be made which will be perfect for your event.</p>
             </div>
-         </dd>
-          
-         <dd class="accordion-navigation">
-           <a href="#panel8">8. Where is your meat from?</a>
-            <div id="panel8" class="content">
-              <p>We get our meat from P W Copus Butchers.</p>   
-            </div>
-         </dd>
+          </div>
+        </div>
 
-         <dd class="accordion-navigation">
-            <a href="#panel9">9. How long before the event start do you need to arrive?</a>
-            <div id="panel9" class="content">
-              <p>About 5 hours.</p>   
+        <div class="faq-question">
+          <div class="question">
+            5. Are you registered?
+            <div class="answer" id="answer5">
+              <p>Yes, we are registered with local authority environmental officers and have HACCP in place.</p>
             </div>
-         </dd>
-          
-         <dd class="accordion-navigation">
-           <a href="#panel10">10. Can I get a discount?</a>
-            <div id="panel10" class="content">
-              <p>No. Piss Off.</p>   
-            </div>
-         </dd>
+          </div>
+        </div>
 
-         <dd class="accordion-navigation">
-           <a href="#panel11">11. How much wood can a Woodchuck chuck, if a Woodchuck could chuck wood?</a>
-            <div id="panel11" class="content">
-              <p>2.3.</p>   
+        <div class="faq-question">
+          <div class="question">
+            6. Are you insured?
+            <div class="answer" id="answer6">
+              <p>Yes, we hold public liability insurance which allows us to operate almost anywhere. We can provide relevant documents upon request.</p>
             </div>
-         </dd>
+          </div>
+        </div>
 
-         <dd class="accordion-navigation">
-           <a href="#panel12">12. How far in advance should I book?</a>
-            <div id="panel12" class="content">
-              <p>As soon as possible. We would hate to turn you away!</p>   
+        <div class="faq-question">
+          <div class="question">
+            7. Where is your meat from?
+            <div class="answer" id="answer7">
+              <p>We use locally-sourced produce and are in partnership with P W Copus Butchers to ensure that we provide you with the highest quality meats.</p>
             </div>
-         </dd>
-        </dl>
+          </div>
+        </div>
+
+        <div class="faq-question">
+          <div class="question">
+            8. What do I need to provide?
+            <div class="answer" id="answer8">
+              <p>All we need you to do is have a flat, 3m by 3m square area for us to set up our Gazebo and hog roasting equipment. The gazebo ensures that come rain or shine we can still operate. Everything else is done by us so you can sit back and enjoy your day.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-question">
+          <div class="question">
+            9. How far do you travel?
+            <div class="answer" id="answer9">
+              <p>Kent County Hog Roast operate all over Kent and the surrounding areas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-question">
+          <div class="question">
+            10. How will your team look on the day?
+            <div class="answer" id="answer10">
+              <p>We will be we well presented. Our chefs wear traditional chef whites and our team will be wearing our uniform. We want to give you a professional and friendly service on your day.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-question">
+          <div class="question">
+            11. What happens after the event?
+            <div class="answer" id="answer11">
+              <p>We will ensure that everything is tidied away. We would love to hear your experiences following the event so please feel free to share these with us.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -138,18 +151,19 @@
         Find us on <a class="facebook" href="https://www.facebook.com/kentcountyhogroast">Facebook</a><span>
       </div>
       <div class="name">
-        <span class="footerText">Kent County Hog Roast 2017 - Made by <a class="madeBy" href="harleyrowland.com">Harley Rowland</a>
+        <span class="footerText">Kent County Hog Roast 2017 - Made by <a class="madeBy" href="http://www.harleyrowland.com">Harley Rowland</a>
         </span>
       </div>
     </footer>
 
   </body>
-
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="../scripts/email.js" type="text/javascript"></script>
+  <script src="https://use.typekit.net/lgo5yej.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="../scripts/jquery.js"></script>
   <script src="../scripts/nav-bar.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
-  <script type="text/javascript">
-    $(document).foundation();
+  <script src="../scripts/faq.js" type="text/javascript"></script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+ -->  <script type="text/javascript">
+    // $(document).foundation();
   </script>
 </html>

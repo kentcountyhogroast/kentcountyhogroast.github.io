@@ -6,24 +6,25 @@
     <title>Kent County Hog Roast</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+    <link rel="stylesheet" href="../foundation/css/foundation.min.css">
     <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../stylesheets/general.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/nav-bar.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/enquiries.css"> 
     <link rel="stylesheet" type="text/css" href="../stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/nav-bar.css">
+    <link rel="icon" type="image/jpg" href="../assets/logo.jpg">
   </head>
  
   <body>
     <nav class="top-bar" data-topbar role="navigation">
-      <a href="../index.html" class="span">Kent County Hog Roast</a>
-      <div class="link-group show-for-medium-up">
-        <a href="../index.html" type="button">Home</a>
-        <a href="" type="button" class="active">Enquiries</a>
-        <a href="prices.html" type="button">Price List</a>
-        <a href="faq.html" type="button">FAQs</a>
+      <a href="../index.html" class="logo">Kent County Hog Roast</a>
+      <div class="link-group show-for-large">
+        <a href="../index.html">Home</a>
+        <a href="" class="active">Enquiries</a>
+        <a href="packages.html">Hog Roast Packages</a>
+        <a href="faq.html">FAQs</a>
       </div>
-      <div class="menu show-for-small-only">
+      <div class="menu hide-for-large">
         <a href="#"><i class="fi-list large"></i></a>
       </div>
     </nav>
@@ -31,38 +32,74 @@
     <div class="drop-down">
       <a href="../index.html">Home</a>
       <a href="" class="active">Enquiries</a>
-      <a href="prices.html">Price List</a>
+      <a href="packages.html">Hog Roast Packages</a>
       <a href="faq.html">FAQs</a>
     </div>
     
-    <div class="enquiries row">
-      <div class="title small-12 columns">
-        <h1>Enquire About an Event</h1>
+    <div class="main">
+      <div class="title">
+        <h1 class="hide-for-landscape">Enquiries</h1>
+        <h2 class="show-for-landscape">Enquiries</h2>
       </div>
-      <div class="content main row">
+      <div class="contact-form">
+        <p class="text">
+          If you would like further information, or have any queries, please complete the following form and we will be happy to help in any way we can. If you would rather contact us in another way, extra details are given at the bottom of this page. 
+        </p>
         <div>
-         <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor and vitality, so that the labor and sorrow, some important things to do eiusmod. Over the years, I will come, who will nostrud aliquip out of her the advantage of exercise, so that stimulus efforts if the school district and longevity. Want to be a pain in the cupidatat cillum has been criticized in the Duis et dolore magna flee produces no resultant pleasure.</p>
-        </div>
-        <div class="email medium-12 columns">
-        <div class="message-send-overlay">
-          <div class="loader">Loading...</div>
-        </div>
+          <div class="message-send-overlay">
+            <div class="loader">Loading...</div>
+          </div>
           
-        <form class='email-form'>
-          <input class='form-object' id="name" type="text" name="name" placeholder="Name" maxlength="100">
-          <input class='form-object' id="email" type="text" name="email" placeholder="Email" maxlength="100">
-          <input class='form-object' id="number" type="text" name="number" placeholder="Telephone Number" maxlength="100">
-          <input class='form-object' id="number" type="text" name="number" placeholder="Package name" maxlength="100">
-          <input placeholder="Date of event" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date"> 
-          <textarea class='form-object' id="email-body" cols="40" rows="7" placeholder="Leave us a message." maxlength="500"></textarea>
-          <div class="form-actions row">
-            <a class="clear small-12 columns">Clear form</a>
-            <div class="button-div small-12 columns">
-              <input class='form-object email-button' id="submit-button" type="button" value="Send">
-            </div> 
-          </div>       
-        </form>
+          <form class='email-form'>
+            <input class='form-object' id="name" type="text" name="name" placeholder="Name" maxlength="100">
+            <input class='form-object' id="email" type="text" name="email" placeholder="Email" maxlength="100">
+            <input class='form-object' id="number" type="text" name="number" placeholder="Telephone Number" maxlength="100">
+            <input class='form-object' id="package" type="text" name="number" placeholder="Package name" maxlength="100">
+            <input id="date" type="date">
+            <textarea class='form-object' id="email-body" cols="40" rows="7" placeholder="Leave us a message." maxlength="500"></textarea>
+            <div class="form-actions row">
+              <div class="submit small-12 columns">
+                <a class="clear small-12 columns">Clear form</a>
+                <input class='form-object' id="submit-button" type="button" value="Send">
+              </div> 
+            </div>       
+          </form>
+        </div>
+
+        <div class="reveal" id="myModal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+          <h2 id="modalTitle">Message Sent!</h2>
+          <p class="messageSent"></p>
+        </div>
       </div>
+
+      <div class="map-and-details row">
+        <div class="details small-12 medium-6 columns">
+          <p>
+            If you want to drop by, our address is:
+          </p>
+          <p>
+            72 Western Road<br>
+            Borough Green<br>
+            Kent<br>
+            TN15 8AH</p>
+          <p>
+            Or call us on: 01732 883636. 
+          </p>
+
+          <p>
+            Want to find us online? Contact us on:
+          </p>
+          <p>
+            Facebook:<br class="show-for-small"><a class="facebook" href="https://www.facebook.com/kentcountyhogroast">#kentcountyhogroast</a><br>
+            E-mail:<br class="show-for-small">kentcountyhogroast@outook.com
+          </p>
+        </div>
+        <div class="map small-12 medium-6 columns">
+          <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB_kSHatiLu41Xie0fkw28RyXuJXPYKkng&v=3.exp'></script>
+            <div style='overflow:hidden;width:100%;'><div id='gmap_canvas' style='height:350px;'></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(51.2927757,0.30265129999997953),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.2927757,0.30265129999997953)});infowindow = new google.maps.InfoWindow({content:'<strong>Kent County Hog Roast</strong><br>72 Western Road Borough Green Kent TN15 8AH<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+          </script>
+        </div>
       </div>
     </div>
 
@@ -71,18 +108,20 @@
         Find us on <a class="facebook" href="https://www.facebook.com/kentcountyhogroast">Facebook</a><span>
       </div>
       <div class="name">
-        <span class="footerText">Kent County Hog Roast 2017 - Made by <a class="madeBy" href="harleyrowland.com">Harley Rowland</a>
+        <span class="footerText">Kent County Hog Roast 2017 - Made by <a class="madeBy" href="http://www.harleyrowland.com">Harley Rowland</a>
         </span>
       </div>
     </footer>
 
   </body>
-  
+  <script src="https://use.typekit.net/lgo5yej.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="../scripts/email.js" type="text/javascript"></script>
   <script src="../scripts/nav-bar.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
   <script type="text/javascript">
+    loadServer();
     $(document).foundation();
   </script>
 </html>

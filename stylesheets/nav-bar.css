@@ -1,14 +1,69 @@
 .top-bar {
-  background-color: #4B651E;
+  background-color: #003300;
   top:0;
   width: 100%;
-  height: 45px;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.top-bar * {
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+.link-group .active {
+  border-bottom: solid #BFDF8A 4px;
+  padding-bottom: 6px;
 }
 
+.link-group a:hover {
+  border-bottom: solid #BFDF8A 4px;
+  padding-bottom: 6px;
+}
+
+.fi-list:hover, .logo:hover  {
+  color: #BFDF8A;
+}
+
+.top-bar .logo {
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Small Screens */
+.drop-down {
+  z-index: 1000;
+  position: fixed;
+  top: 43px;
+  width: 100%;
+  background-color: rgba(75,101,30,0.8);
+  text-align: center;
+  display: none;
+}
+
+.drop-down a {
+  display: block;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.drop-down a.active {
+  background-color: rgba(0,51,0,0.8);;
+}
+
+
+.drop-down a:hover {
+  transform: scale(1.1);
+  background-color: rgba(0,51,0,0.8);;
+}
+
+.drop-down a:not(.active){
+  text-decoration: none;
+}
+
+
+/* Bigger than Small Screens */
 .link-group, .fi-list {
   float: right;
 }
@@ -24,57 +79,38 @@
 }
 
 .link-group a {
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   margin-right: 30px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
 }
 
-.active {
-  font-size: 22px !important;
+.link-group a:nth-child(4) {
+  margin-right: 0px;
 }
 
-.link-group a:hover, .fi-list:hover  {
- font-size: 22px;
+/* Medium Screens */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .link-group a {
+    margin-right: 5px;
+  }
+
+  .link-group a:nth-child(4) {
+    margin-right: 0px;
+  }
+
+  .fi-list {
+    margin-right: 0px;
+  }
 }
 
-.top-bar .span {
-  float: left;
-  padding-left: 30px;
-  color: #ffffff;
-}
+/* Small Screens */
+@media screen and (max-width: 40em){
+  .top-bar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
-.menu-up {
-  display: none;
-}
-
-.drop-down {
-  z-index: 1000;
-  position: fixed;
-  top: 45px;
-  width: 100%;
-  background-color: rgba(75,101,30,0.8);
-  text-align: center;
-  display: none;
-}
-
-.drop-down a {
-  display: block;
-  color: #ffffff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-}
-
-.drop-down a.active {
-  transform: scale(1.1);   
-}
-
-
-.drop-down a:hover {
-  transform: scale(1.1); 
+  .fi-list {
+    margin-right: 0px;
+  }
 }

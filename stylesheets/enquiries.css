@@ -1,8 +1,5 @@
-.enquiries {
-  min-height: 90%;
-}
-
-.email-form{
+/* Form CSS */
+form {
   padding-bottom: 30px;
   margin: auto;
   color: #A8A8A8;
@@ -12,7 +9,7 @@ input[type=text], .form-object {
   border-radius: 5px;
 }
 
-.button-div {
+.submit {
   width: 100%;
   text-align: center;
 }
@@ -34,19 +31,19 @@ input[type=date] {
   border-radius: 5px;
 }
 
-
-.email-button {
-  border: 3px solid #4B651E !important;
+.submit .form-object {
+  border: 3px solid #003300 !important;
   background-color: white !important;
-  color: #4B651E !important;
+  color: #003300 !important;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+  padding-bottom: 20px;
 }
 
-.email-button:hover {
+.submit .form-object:hover {
   background-color: #BFDF8A !important;
   color: black !important;
 }
@@ -55,12 +52,8 @@ input[type=date] {
   color: #A8A8A8;
 }
 
-.contact-me {
-  position: relative;
-}
-
 .clear {
-  color: #4B651E;
+  color: #003300;
   margin-top: -10px;
   float: right;
   text-decoration: underline;
@@ -69,14 +62,22 @@ input[type=date] {
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+  padding-bottom: 10px;
 }
 
 .clear:hover {
   color: #BFDF8A;
 }
 
-.modal {
+#myModal {
   display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-reveal-modal {
+  float: right;
 }
 
 .message-send-overlay {
@@ -93,7 +94,7 @@ input[type=date] {
 
 /*Reference: http://projects.lukehaas.me/css-loaders/*/
 .loader {
-  color: #1C8FB2;
+  color: #003300;
   font-size: 90px;
   text-indent: -9999em;
   overflow: hidden;
@@ -109,6 +110,50 @@ input[type=date] {
   animation: load6 1.7s infinite ease;
 }
 
+
+/* Map and Details CSS*/
+.map-and-details {
+  border-top: 3px solid #003300;
+  padding-top: 20px; 
+}
+
+.details, .map {
+  padding: 0px;
+}
+
+.details a {
+  color: #BFDF8A;
+}
+
+.details a:hover {
+  color: #003300;
+}
+
+
+/* Small screens */ 
+@media only screen and (max-width: 40em)  {
+  input[type=button] {
+    width: 40%;
+  }
+
+  .enquiries {
+    padding: 10px;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+}
+
+/* Medium screens */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .details {
+    padding-right: 20px;
+  }
+}
+
+/* Animate */
 @-webkit-keyframes load6 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -184,33 +229,5 @@ input[type=date] {
   40% {
     box-shadow: 0 -2em;
     height: 5em;
-  }
-}
-
-/*Small screens*/
-@media only screen and (max-width: 40em)  {
-
-  input[type=button] {
-    width: 40%;
-  }
-
-  .clear {
-    text-align: center;
-  }
-
-  .enquiries {
-    padding: 10px;
-  }
-
-  .main {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-  }
-}
-
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-  .enquiries {
-    padding: 10px;
   }
 }
