@@ -3,11 +3,6 @@
   padding-bottom: 30px;
 }
 
-.extra-info {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .landing .text {
   width: 100%;
   margin: 0px;
@@ -204,4 +199,12 @@
     max-height: 20vw;
   }
 
+}
+
+/* X-large Screens */
+@media screen and (min-width: 74.9375em) {
+  .extra-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -8,9 +8,10 @@ body * {
 }
 
 .main, .extra-info {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title *, .sub-title *, .heading * {
@@ -53,5 +54,13 @@ body * {
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .extra-info {
     padding-top: 0px;
+  }
+}
+
+/* X-large Screens */
+@media screen and (min-width: 74.9375em) {
+  .main {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
